@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Classic Carrom</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="game">
+
+    <h1>CARROM</h1>
+    <p class="subtitle">Classic Board Game</p>
+
+    <!-- SCORE -->
+    <div class="score-area">
+
+        <div class="player-card active" id="p1Card">
+            <span>PLAYER 1</span>
+            <b id="score1">0</b>
+        </div>
+
+        <div class="middle">
+
+            <div id="turn">PLAYER 1 TURN</div>
+
+            <button id="newGame">NEW GAME</button>
+
+        </div>
+
+        <div class="player-card" id="p2Card">
+            <span id="p2Name">PLAYER 2</span>
+            <b id="score2">0</b>
+        </div>
+
+    </div>
+
+
+    <!-- GAME MODE -->
+
+    <div id="gameMessage" class="game-message"></div>
+
+    <div class="modes">
+
+        <button id="twoPlayer" class="mode active">
+            2 PLAYER
+        </button>
+
+        <button id="computer" class="mode">
+            VS COMPUTER
+        </button>
+
+    </div>
+
+
+    <!-- BOARD -->
+
+    <div class="board-container">
+
+        <canvas
+            id="board"
+            width="760"
+            height="760">
+        </canvas>
+
+    </div>
+
+
+    <!-- INSTRUCTIONS -->
+
+    <div class="instructions">
+
+        <h3>HOW TO PLAY</h3>
+
+        <p>
+            Drag the striker <b>left or right</b> to position it.
+        </p>
+
+        <p>
+            Drag from the striker toward the board to aim.
+        </p>
+
+        <p>
+            Release to shoot.
+        </p>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
